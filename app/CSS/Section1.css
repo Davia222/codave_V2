@@ -1,0 +1,91 @@
+#section1{
+    position: relative;
+    height: 400vh;
+    width: 100%;
+    transition: background-color 1s ease-in-out;
+    
+    
+
+}
+
+.section1Sticker{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    background-color: #ececec;  
+
+    transition: background-color 500ms ease-in-out;
+}
+
+.testRec{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+
+}
+
+.heroTxtSec{
+    position: absolute;
+    top: 0;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    z-index: 1;
+}
+
+.heroTxtSec h1{
+    font-size: 20vw;
+    font-family: "BBH Hegarty", sans-serif;
+    color: #0f0d0f;
+   
+
+
+}
+
+.heroLogoDiv{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    /* border: 2px solid red; */
+}
+
+.heroLogo{
+    object-fit: contain;
+}
+
+.heroImgSec{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    /* border: 2px solid red; */
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.heroImageDiv{
+    position: absolute;
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+
+}
+
+/* .heroImage{
+    object-fit: contain;
+    object-position: top;
+} */
+

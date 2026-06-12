@@ -1,0 +1,138 @@
+footer{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #0f0d0f;
+    padding-top: 5%;
+    transition: background-color 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.footerNavs{
+    height: 100px;
+    width: 100%;
+    position: relative;
+}
+
+.footerNav1{
+    position: absolute;
+    left: 5%;
+    width: 400px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ececec;
+    font-family: "Orbitron", sans-serif;
+    font-size: 11px;
+
+}
+
+@media (max-width:480px) {
+    .footerNav1{
+        width: 300px;
+    }
+}
+
+.footerNav1 button{
+    cursor: pointer;
+}
+
+.footerMarquee{
+    width: 100%;
+    /* border: 2px solid #aaaaaa2a; */
+    left: 0;
+    font-size: 5vw;
+    color: #aaaaaa;
+    font-family: "Orbitron", sans-serif;
+ }
+
+ .footerLogo{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+ }
+
+ 
+
+ .codaveFooterH1{
+    font-family: "BBH Hegarty", sans-serif;
+    font-size: 19vw;
+    color: white;
+ }
+
+
+ .footerTxtSec{
+    position: absolute;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    z-index: 1;
+}
+
+.footerTxtSec h1{
+    font-size: 20vw;
+    font-family: "BBH Hegarty", sans-serif;
+    color: #0f0d0f;
+   
+
+
+}
+
+
+.footerLogoDiv{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    /* border: 2px solid red; */
+}
+
+.footerLogo{
+    object-fit: contain;
+}
+
+ .copyright{
+    position: absolute;
+    font-family: "Orbitron", sans-serif;
+    color: #ececec;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    /* border: 2px solid black; */
+    width: 100%;
+    bottom: 20px;
+ }
+
+ .copyright span{
+    width: 50px;
+ }
+
+ @media (max-width:700px) {
+    .codaveLogoFooter{
+        width: 150px;
+    
+    }
+ }
+
+ @media (max-width:500px) {
+    .codaveLogoFooter{
+        width: 100px;
+    }
+
+    .footerLogo{
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+ }
+

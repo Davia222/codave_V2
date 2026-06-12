@@ -1,0 +1,126 @@
+#section4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.sec4Layout{
+    height: 90%;
+    width: 95%;
+    /* border: 1px solid black; */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 50px;
+
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.aboutSecH1{
+    position: absolute;
+    font-family: "Orbitron", sans-serif;
+    color: #0f0d0f;
+    top: 3%;
+    font-size: 20px;
+    left: 3%;
+}
+
+.globeDiv{
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+
+}
+
+.aboutCodaveTxt{
+    height: 70%;
+    width: 500px;
+    /* border: 2px solid black; */
+    position: absolute;
+    
+    font-family: 'Courier New', Courier, monospace;
+    /* font-family: "Poiret One", sans-serif; */
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+    right: 15%;
+}
+
+@media (max-width:1000px) {
+    .aboutCodaveTxt{
+        right: 10%;
+
+    }
+}
+
+@media (max-width:920px) {
+    .aboutCodaveTxt{
+        right: 5%;
+
+    }
+}
+
+@media (max-width:880px) {
+    .aboutCodaveTxt{
+        height: 80%;
+        width: 400px;
+    }
+}
+
+@media (max-width:750px) {
+
+    
+    #section4{
+        height: 160vh;
+
+    }
+
+    .aboutCodaveTxt{
+        top: 15%;
+        height: 60%;
+        width: 400px;
+        justify-content: space-between;
+
+
+    }
+}
+
+@media (max-width:480px) {
+
+    #section4{
+        height: 180vh;
+    }
+
+    .aboutCodaveTxt{
+
+        position:absolute;
+        right: auto;
+        width: 300px;
+    }
+}
+
+
+@media (max-width:330px) {
+
+
+    .aboutCodaveTxt{
+
+        position:absolute;
+        right: auto;
+        width: 250px;
+    }
+}
+

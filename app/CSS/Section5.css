@@ -1,0 +1,88 @@
+.section5{
+    position: relative;
+    height: 140vh;
+    padding-top: 20vh;
+    width: 100%;
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid blue; */
+
+
+}
+
+.sec5ImgSec{
+    position: absolute;
+
+    height: 120vh;
+    width: 98%;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+}
+
+.sec5BgImgDiv{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  
+
+}
+
+.sec5BgImgDiv::before{
+    content: " ";
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #0f0d0f75;
+    z-index: 1;
+}
+
+.sec5Img{
+    object-fit: cover;
+}
+
+.sec5H1_1{
+    position: absolute;
+    mix-blend-mode: difference;
+    color: #ececec;
+    font-size: 7vw;
+    top: 30%;
+    font-family: "BBH Hegarty", sans-serif;
+    /* font-family: "Orbitron", sans-serif; */
+    /* font-family: "Cormorant Unicase", serif; */
+
+}
+
+.sec5H1_2{
+    position: absolute;
+    mix-blend-mode: difference;
+    color: #ececec;
+    font-size: 7vw;
+    top: 50%;  
+    font-family: "BBH Hegarty", sans-serif;
+
+    /* font-family: "Orbitron", sans-serif; */
+    /* font-family: "Cormorant Unicase", serif; */
+
+}
+
+
+
+/* .marqueeParent{
+    height: 100vw;
+    width: 100vh;
+    border: 2px solid black;
+    background-color: #ececec;
+
+}
+
+.sec6Marquee{
+    height: 100%;
+    background-color: #ececec;
+
+} */
