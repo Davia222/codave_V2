@@ -10,6 +10,8 @@ import Marquee from "react-fast-marquee"
 
 function Section12() {
 
+    const everyYear = new Date().getFullYear()
+
     const [colorBlack, setColorBlack] = useState("#0f0d0f")
 
     const [colorWhite, setColorWhite] = useState("#ececec")
@@ -92,7 +94,7 @@ function Section12() {
 
            <section className="copyright" style={{color:colorWhite}} >
 
-            <p>CODAVE.SPACE © 2026 </p>
+            <p>CODAVE.SPACE © {everyYear} </p>
 
             <span> </span>
 

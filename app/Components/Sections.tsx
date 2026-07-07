@@ -14,10 +14,15 @@ import Section10 from "./Section10"
 import Section11 from "./Section11"
 import Section12 from "./Section12"
 
+interface visiState {
+  visibility:string
+}
 
-function Sections() {
+function Sections({visibility}:any) {
+
   return (
-  <>
+  <div style={{display:visibility}}>
+
   <Header/>
   <Section1/>
   <Section2/>
@@ -33,7 +38,7 @@ function Sections() {
   <Section12/>
   
   
-  </>
+  </div>
   )
 }
 

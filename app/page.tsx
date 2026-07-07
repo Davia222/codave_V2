@@ -2,6 +2,7 @@
 
 import Lenis from "lenis";
 import { useEffect, useState } from "react";
+import "./globals.css"
 import "./CSS/Loading.css"
 
 import "./CSS/Section1.css"
@@ -21,6 +22,7 @@ import Sections from "./Components/Sections";
 
 
 import "./CSS/Header.css"
+import { html } from "motion/react-client";
 
 
 
@@ -47,11 +49,33 @@ export default function Home() {
    ///////////// Loading ////////////////////
 
    const [loadingIn,setLoadingIn] = useState<boolean>(true)
+   const [visibility, setVisibility] = useState<string>("none")
+
+   
+   //////////////// Rather than Off and On ////////////////////
+
 
    useEffect(()=>{
     
+
+    const visiTimout = setTimeout(() => {
+      setVisibility("block")
+      
+    }, 3500);
+
+    return ()=> clearTimeout(visiTimout)
+
+   },[visibility])
+
+   
+//////////////// Rather than Off and On ////////////////////
+
+   useEffect(()=>{
+
+    
     const loadingTimout = setTimeout(() => {
       setLoadingIn(false)
+
     }, 4000);
 
 
@@ -65,7 +89,9 @@ export default function Home() {
   return (
     <>
 
-    {loadingIn ? <Loading />  : <Sections/>}
+   {loadingIn && <Loading /> }
+   <Sections visibility={visibility}/>
+
 
     </>
   );

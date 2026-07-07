@@ -10,12 +10,15 @@ import { useEffect, useRef, useState } from "react"
 
 function Section8() {
 
-    const ourWidth = window.innerWidth
+   
 
     const [innerXWidth1, setInnerXWidth1] = useState("-600vw")
     const [innerXWidth2, setInnerXWidth2] = useState("0vw")
 
     useEffect(()=>{
+
+    const ourWidth = window.innerWidth
+
       if(ourWidth < 700){
         setInnerXWidth1("-4200px")
         setInnerXWidth2("0px")
@@ -25,7 +28,8 @@ function Section8() {
         setInnerXWidth1("-600vw")
         setInnerXWidth2("0vw")
       }
-    },[ourWidth])
+
+    },[])
     
 
 

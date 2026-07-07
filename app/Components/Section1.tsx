@@ -23,7 +23,7 @@ function Section1() {
  const imageY = useTransform(heroProgress, [0,0.8], ["40%", "0%"])
 
  const imageScaler2 = useTransform(heroProgress, [0.3, 0.8], [3.7, 1])
- const imageRotater = useTransform (scrollYProgress, [0,1], [0, 360])
+ const imageRotater = useTransform (scrollYProgress, [0,0.2], [0, 360])
 
  
  const [backgroundCol, setBackgroundCol] = useState("#ececec")

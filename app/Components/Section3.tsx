@@ -19,13 +19,15 @@ function Section3() {
     offset:["start end", "end start"]
   })
 
+  
+
   const {scrollYProgress} = useScroll()
 
   const firstY = useTransform(sec3Progress, [0,1], [300,0])
 
   const SecondY = useTransform(sec3Progress, [0,1], [100,-100])
 
-  const txtX = useTransform(scrollYProgress, [0,1], ["15%","-25%"])
+  const txtX = useTransform(scrollYProgress, [0.1,0.5], ["15%","-25%"])
 
 
 
